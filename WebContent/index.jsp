@@ -15,12 +15,26 @@
 <body>
    <h2>JSP Practice </h2>
 	
-	<c:out value="${'Welcome to javaTpoint'}"/>  
+	<h2>Practice 1 Hello world</h2>
 	<c:out value=" Hola munditu "></c:out> 
+	
+	<h2>Practice 2 Expression Languaje</h2>
 	<c:set var="funda" scope="application" value="100"></c:set>
 	<c:out value="${funda}"></c:out>
 	
+	<h2>Practice 3 For Lop</h2>
+	<c:forEach var="i" begin="1" end="10">
+	<c:out value="${i}"></c:out>
+	</c:forEach>
 	
+	<h2>Practice 4 Forms</h2>
+	<form>
+		<label for="txtNumber">Number</label>
+		<input class="form-control" type="text" id="txtNumber" name="txtNumber">
+		<input class="btn btn-primary" type="submit" value="Square the number">
+		The square the number is:
+		<c:out value="${param.txtNumber * param.txtNumber}"></c:out>
+	</form>
 	
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
